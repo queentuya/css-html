@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Align</title>
+  <style>
+   
+   * {
+     box-sizing: border-box;
+
+   }
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+
+   }
+   .box {
+    background: #f4f4f4;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 15px;
+
+
+   }
+   .box p {
+    text-align: center;
+    /* left or center or right etc */
+
+   }
+   
+   
+    .container {
+        /* width: 960px; */
+        max-width: 960px;
+        margin: auto;
+        /* this moves text container to be center alignment. ALWAYS USE max-width: for 
+        width
+        SO IT WORKS ON ANY DEVICE SCREEN*/
+        /* add a number to put space on top and/or bottom */
+    }
+
+    .clr {
+      clear: both;
+    }
+    #box-2 {
+      float: left;
+      width: 65%;
+
+    }
+#box-3 {
+  float: right;
+  width: 30%;
+}
+/* float is moving boxes to be horizontally even like columns
+the % is from max-width: 960px;  ALSO HAVE TO SET * {box-sizing: border-box;}
+Can also decrease % of box-2 to give space*/
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div id="box-1" class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, hic eius.
+       Laborum obcaecati eius, iure dicta nostrum ea odio sunt!
+</p>
+</div>
+  <div id="box-2" class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, hic eius.
+       Laborum obcaecati eius, iure dicta nostrum ea odio sunt!
+    </p>
+</div>
+  <div id="box-3" class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, hic eius.
+       Laborum obcaecati eius, iure dicta nostrum ea odio sunt!
+    </p>
+</div>
+<div class="clr"></div>  
+
+
+
+
+
+
+<div id="box-4" class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, hic eius.
+       Laborum obcaecati eius, iure dicta nostrum ea odio sunt!
+    </p>
+</div>
+
+
+</div>
+</body>
+</html>

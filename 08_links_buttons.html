@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Links & Buttons</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* to change from default */
+    a {
+      /* color: #333; */
+      text-decoration: none;
+    }
+
+    /* TO CHANGE STATES */
+
+
+  /* to make it change when you hover over it */
+  a:hover {
+    color: coral;
+  }
+  /* to make it change when you have visited it 
+  a:visited {color:red;}
+  */
+  /* to make it change when it becomes active
+  a:active{color:red;} */
+  
+  /* button styling */
+  .btn {background: #4c6ca0;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      /* links default to changing when you hover but buttons don't */
+      /* to make a button change with hover see below */
+    cursor: pointer; }
+    .btn:hover {
+      color: #f4f4f4;
+      background: #446190;
+    }
+
+
+  
+  </style>
+</head>
+<body>
+  <br>
+  <a class="btn" href="#">My Link</a>
+  <br>
+  <br>
+  <button class="btn">My Button</button>
+  <!-- this gives default of blue and underlined -->
+<!-- If want to add more buttons that look the same just name them class="btn" -->
+
+</body>
+</html>

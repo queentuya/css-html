@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+  <style>
+    h2#green-heading{
+      color:green;
+    }
+/* use "#" for id and "." for class when linking like above and below */
+
+    #welcome {
+        background-color: #f4f4f4;
+      }
+/* when selecing multiple things the same use "," in between them*/
+      #welcome, #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+/* Nested Selectors don't use "," use space then "p" for paragraph*/
+    #welcome p {
+font-size: 20px;
+
+    }
+
+
+
+</style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, excepturi!
+        Temporibus voluptas doloremque inventore, ipsam aliquid numquam neque eum libero.
+<!-- best not to use attributes in naming as you may change it, not "green-heading"
+      maybe use "primary-heading" -->
+    </p> 
+</div>
+    <div id="about">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam incidunt ut
+        , iure excepturi tenetur sit quod dolores nesciunt eum nihil!
+    </p>
+    </div>
+
+
+</body>
+</html>
